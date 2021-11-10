@@ -26,6 +26,9 @@ export default function Pagination({
             // dataListKey is the variable to reference the actual list of items which is to be rendered.
             // Here, the data is given back as:
             //     { currentPage: number, total: number, items: [{ name, agem gender }...] }
+
+            // Similarly, dataTotalKey is the key of the object (sent as response from endpoint)
+            // representing the total pages available at the backend
             
             let pagesList = []
             for (let i = 1; i <= data[dataTotalKey]; i++) {
